@@ -5,39 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <h1>Register form </h1>
-    ชื่อ<input type="text"> <br>
-    นามสกุล<input type="text">
-    อายุ<input type="number"min="0" max="150">
-    <div>
-        เพศ
-        <div>
-            <input name ="gender" type="radio">ชาย
+    <div class="container">
+        <div class="header">
+             Register form 
         </div>
-        <div>
-            <input name="gender"type="radio">หญิง
+        <div class="flex form-input">  
+              <div class="header-form">ชื่อ</div>
+              <input class="form" name="firstname" type="text">
         </div>
-        <div>
-            <input name="gender"type="radio">อื่นๆ
+        <div class="flex form-input">
+             <div class="header-form">นามสกุล</div>
+             <input class="form" name="lastname" type="text"> <br>
         </div>
-     </div>
-        สิ่งที่สนใจ
-        <div>
-            <input name ="interest" type="checkbox">เรียน
+        <div class="flex form-input">
+             <div class="header-form">อายุ</div>
+             <input class="form" name="age" type="number" min="0" max="100">
         </div>
-        <div>
-            <input name ="interest" type="checkbox">เล่นเกม
+
+        <div class="flex gender form-input">
+             <div class="header-form">เพศ</div>
+             <div class="flex">
+                <div>
+                    <input name="gender" type="radio"> ชาย
+                </div>
+                <div>
+                    <input name="gender" type="radio"> หญิง
+                </div>
+                <div>
+                    <input name="gender" type="radio"> ไม่ระบุ
+                </div>
+             </div>
         </div>
-        <div>
-            <input name ="interest" type="checkbox">อ่านหนังสือ
+        <div class="form-input">
+             งานอดิเรก
+             <div>
+                  <input name="interest" type="checkbox" value="อ่านหนังสือ"> อ่านหนังสือ
+             </div>
+             <div>
+                  <input name="interest" type="checkbox" value="ดูหนัง"> ดูหนัง
+             </div>
+             <div>
+                  <input name="interest" type="checkbox" value="ฟังเพลง"> ฟังเพลง
+             </div>
         </div>
-    </div>
-    <div>
-        คำอธิบายตัวเอง
-        <textarea></textarea>
-    </div>
-    <button>ส่งข้อมูล</button>
+        <div class="form-input">
+             คำอธิบาย
+             <textarea name="description"></textarea>
+        </div>
+        <div class="center">
+            <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+        </div>
+   </div>
+   <script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://res.allmacwallpaper.com/get/iMac-21-inch-wallpapers/among-us-x-cyberpunk-5k-1920x1080/23924-9.jpg'); 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #dcffae;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.header-form {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.gender .flex {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gender .flex div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #4CAF50;
+    transform: scale(1.1);
+}
+
+.button {
+    background-color: #ffbb00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+}
+
+.center {
+    text-align: center;
+}
+
